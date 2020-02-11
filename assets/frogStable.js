@@ -24,4 +24,3 @@ const frogStable = [
         color: 'black',
         number: '8',
     }  
-]

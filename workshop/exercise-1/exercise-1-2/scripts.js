@@ -33,7 +33,14 @@ document.getElementById("main").appendChild(anchorTag).innerHTML = "Source"
 
 
 const linker = document.createElement("link");
-linker.href= "/workshop/exercise-1/exercise-1-1/styles.css";
+linker.href= "/workshop/exercise-1/exercise-1-2/styles.css";
 linker.rel = "stylesheet";
 document.head.appendChild(linker);
 
+headerOne.classList.add("h1");
+headerTwo.classList.add("h2");
+firstP.classList.add("p");
+secondP.classList.add("p");
+thirdP.classList.add("p");
+picture.classList.add("img");
+anchorTag.classList.add("a");

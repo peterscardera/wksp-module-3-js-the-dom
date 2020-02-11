@@ -87,12 +87,17 @@ Instead, we will use these methods
 
 ```js
 // Example
-
+document.getElementById("my-Div")
+document.querySelector("body")
+document.querySelector("#my-Div) /*when we use querySelector we need to put the # */
+document.querySelector("my-class")
+document.querySelector("div.bacon > ul")
 ```
 
 ---
 
 ## Modify Elements
+
 
 ---
 
@@ -105,12 +110,22 @@ You can modify the content of a leaf, an end node with
 
 ```js
 // Example
+.innerText
+.innerHTML
+
+//we have to assign it to something first
+
+const myTitle = document.getElementById('my-title');
+myTitle innerText = "new tittttleee!"
+
+
 
 ```
 
 ---
 
 ### Add Node(s) to another node
+
 
 ---
 
@@ -127,6 +142,12 @@ To add a new node to an HTML page, you need to do it in 3 steps.
 
 ```js
 // Example
+
+const newParagragh = document.createElement("p")' //create a p tag and we could assign to a variable if we want 
+
+newParagraph.innerText = "new hacker right here" //
+
+document.querySelector("body").appendchild(newParagraph) //target parent and inject p in the body 
 
 ```
 
@@ -151,7 +172,11 @@ We can style elements from JavaScript.
 ```js
 const myDiv = document.getElementById('my-div');
 
-myDiv.style.background = "purple";
+myDiv.style.background = "purple";  //we cant put a dash!!
+
+myDiv.style.border-radius = "23px"
+
+the dash becomes a _
 ```
 
 ⚠️ Houston. We have a problem!
@@ -169,12 +194,14 @@ Calling `myDiv.classList` returns a [`DOMTokenList`](https://developer.mozilla.o
 ... it is _modifiable_. 😃
 
 ...
+//it has its own methods attached to it
+
 
 To modify a `classList`, we have a few methods we can call.
 
 - `.add()`
 - `.remove()`
-- `.toggle()`
+- `.toggle()` //if the class is there it removes it  if its not it adds it in like for drop down menues
 
 ```js
 // Example

@@ -7,6 +7,13 @@
 ```js
 // Example
 
+setTimeout(function(){
+    console.log("hello")
+},1000) //1000 ms which is 1 second
+
+//after 3 seconds it prints hello 
+
+
 ```
 
 ---
@@ -15,6 +22,19 @@
 
 ```js
 // Example
+
+setInterval(function(){
+    console.log("here");
+},1000)
+
+
+///typically we would assign it to a variable 
+const myTimer = setInterval(function(){
+    console.log("here");
+},1000);
+
+//to stop interval
+clearInterval(myTimer;)
 
 ```
 

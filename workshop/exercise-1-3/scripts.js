@@ -33,7 +33,43 @@ document.getElementById("main").appendChild(anchorTag).innerHTML = "Source"
 
 
 const linker = document.createElement("link");
-linker.href= "/workshop/exercise-1/exercise-1-1/styles.css";
+linker.href= "/workshop/exercise-1/exercise-1-3/styles.css";
 linker.rel = "stylesheet";
 document.head.appendChild(linker);
 
+// --------- STYLE ---------------
+
+const body = document.querySelector("body");
+body.style.background = 'rgba(246,187,33, .8) url(./images/yellow-umbrella.jpg) no-repeat';
+body.style.backgroundSize = '100%';
+body.style.fontFamily = '"Playfair Display", serif';
+
+const main = document.getElementById("main");
+main.style.background = "#fafafa";
+main.style.borderRadius = " 4px";
+main.style.boxShadow = '8px 10px 25px 0 rgba(128, 128, 128, .44)';
+main.style.minWidth = '320px';
+main.style.maxWidth = '600px';
+main.style.margin = '36px';
+main.style.padding = '4px 32px 32px';
+
+headerOne.style.fontFamily = "'Open Sans', sans-serif";
+headerOne.style.testAlign = "center";
+headerTwo.style.fontFamily =  " 'Open Sans', sans-serif";
+
+firstP.style.fontSize = " 17px";
+firstP.style.lineHeight - " 1.5em";
+secondP.style.fontSize = " 17px";
+secondP.style.lineHeight - " 1.5em";
+
+picture.style.border = " #fafafa;  ";
+picture.style.borderRadius = " 4px ";
+picture.style.boxShadow = "4px 4px 14px rgba(128, 128, 128, .4); "
+picture.style.width = " 100%";
+
+anchorTag.style.color = " #174E7C";
+anchorTag.style.display = " block";
+anchorTag.style.fontWeight = " 700";
+anchorTag.style.marginTop = " auto";
+anchorTag.style.testAlign = " right";
+anchorTag.style.textDecoration = "none";
